@@ -1,0 +1,9 @@
+{
+    "template": "register_macros",
+    "description": "Add explanation to location field",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "\t<xf:if is=\"$xf.options.registrationSetup.requireLocation\">\n\t\t<xf:textboxrow name=\"{$fieldName}\" value=\"{$value}\" required=\"true\"\n\t\t\tlabel=\"{{ phrase('location') }}\"\n\t\t\thint=\"{{ phrase('required') }}\" />\n\t</xf:if>",
+    "replace": "\t<xf:if is=\"$xf.options.registrationSetup.requireLocation\">\n\t\t<xf:textboxrow name=\"{$fieldName}\" value=\"{$value}\" required=\"true\"\n\t\t\tlabel=\"{{ phrase('location') }}\"\n\t\t\thint=\"{{ phrase('required') }}\"\n\t\t\texplain=\"{{ $xf.options.hampelLocationExplain }}\" />\n\t</xf:if>"
+}

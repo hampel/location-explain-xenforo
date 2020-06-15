@@ -1,0 +1,1 @@
+Explanation message to show below the location field on registration and account details forms.

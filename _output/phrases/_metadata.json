@@ -1,0 +1,26 @@
+{
+    "option.hampelLocationExplain.txt": {
+        "global_cache": false,
+        "version_id": 1000031,
+        "version_string": "1.0.0 Beta 1",
+        "hash": "7e9d28639209afa781ab45bd571270be"
+    },
+    "option_explain.hampelLocationExplain.txt": {
+        "global_cache": false,
+        "version_id": 1000031,
+        "version_string": "1.0.0 Beta 1",
+        "hash": "81e760891a56dac48728dfc602cbd461"
+    },
+    "option_group.hampelLocationExplain.txt": {
+        "global_cache": false,
+        "version_id": 1000031,
+        "version_string": "1.0.0 Beta 1",
+        "hash": "21264dfd5c79e69ff3fc83b394e3a669"
+    },
+    "option_group_description.hampelLocationExplain.txt": {
+        "global_cache": false,
+        "version_id": 1000031,
+        "version_string": "1.0.0 Beta 1",
+        "hash": "df2701b218f2f45f1513f01d23711302"
+    }
+}
