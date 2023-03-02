@@ -8,4 +8,6 @@ By [Simon Hampel](https://twitter.com/SimonHampel).
 Requirements
 ------------
 
-This addon has been tested on XenForo 2.1
+This addon has been tested on XenForo 2.1 and 2.2
+
+v1.0.1 of this addon requires XF 2.2.8 or later
