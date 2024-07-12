@@ -7,10 +7,10 @@
     "dev": "Simon Hampel",
     "dev_url": "https://xenforo.com/community/members/sim.4264/",
     "faq_url": "",
-    "support_url": "https://bitbucket.org/hampel/location-explain-xenforo/issues",
+    "support_url": "https://xenforo.com/community/threads/location-explain.181696/",
     "extra_urls": {
-        "Git Repository": "https://bitbucket.org/hampel/location-explain-xenforo",
-        "Twitter": "https://twitter.com/SimonHampel"
+        "Addon": "https://xenforo.com/community/resources/location-explain.7866/",
+        "Git Repository": "https://github.com/hampel/location-explain-xenforo"
     },
     "require": {
         "XF": [
