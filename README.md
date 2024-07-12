@@ -3,7 +3,7 @@ Location Explain for XenForo 2.x
 
 This XenForo 2.x addon adds an explanation to the Location field on the registration and account details forms
 
-By [Simon Hampel](https://twitter.com/SimonHampel).
+By [Simon Hampel](https://xenforo.com/community/members/sim.4264/).
 
 Requirements
 ------------
