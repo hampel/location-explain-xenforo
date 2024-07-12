@@ -4,6 +4,6 @@
     "execution_order": 10,
     "enabled": true,
     "action": "str_replace",
-    "find": "\t\t\t\t<xf:textboxrow name=\"profile[location]\" value=\"{$xf.visitor.Profile.location_}\"\n\t\t\t\t\tmaxlength=\"{{ max_length($xf.visitor.Profile, 'location') }}\"\n\t\t\t\t\thint=\"{{ $xf.options.registrationSetup.requireLocation ? phrase('required') : '' }}\"\n\t\t\t\t\tlabel=\"{{ phrase('location') }}\" />",
-    "replace": "\t\t\t\t<xf:textboxrow name=\"profile[location]\" value=\"{$xf.visitor.Profile.location_}\"\n\t\t\t\t\tmaxlength=\"{{ max_length($xf.visitor.Profile, 'location') }}\"\n\t\t\t\t\thint=\"{{ $xf.options.registrationSetup.requireLocation ? phrase('required') : '' }}\"\n\t\t\t\t\tlabel=\"{{ phrase('location') }}\"\n\t\t\t\t\texplain=\"{{ $xf.options.hampelLocationExplain }}\" />"
+    "find": "\t\t\t\t\tlabel=\"{{ phrase('location') }}\" />",
+    "replace": "\t\t\t\t\tlabel=\"{{ phrase('location') }}\"\n\t\t\t\t\texplain=\"{{ $xf.options.hampelLocationExplain }}\" />"
 }
