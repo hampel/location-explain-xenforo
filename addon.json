@@ -15,7 +15,7 @@
     "require": {
         "XF": [
             "2020870",
-            "XenForo 2.2.8"
+            "XenForo 2.2.8+"
         ]
     },
     "icon": "fa-map-marker-alt"
