@@ -1,8 +1,12 @@
 # CHANGELOG
 
+## 1.0.4 (2026-09-30)
+
+- the option's explanation now says the registration form shows the text only when "Require location" is enabled, and that it is plain text
+
 ## 1.0.3 (2025-12-12)
 
-- run enqueuePostUpgradeCleanUp during upgrades if we're running XF2.3+
+- run `enqueuePostUpgradeCleanUp()` during upgrades if we're running XF2.3+
 
 ## 1.0.2 (2024-07-12)
 
