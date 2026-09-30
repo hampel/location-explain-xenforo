@@ -1,1 +1,1 @@
-Explanation message to show below the location field on registration and account details forms.
+Text shown below the Location field on the account details page, and on the registration form when "Require location" is enabled in Registration setup. Plain text; leave empty to show nothing.
