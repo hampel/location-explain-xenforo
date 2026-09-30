@@ -32,6 +32,8 @@ requires a location — which is also the only case in which core shows the fiel
 because XF 2.2.8 changed `account_details` under the find, so treat an XF upgrade as a reason to
 recheck. The apply count is the check: *Appearance > Template modifications* in the admin control
 panel, or the `xf_template_modification_log` table. Each should apply exactly once.
+`TESTING.md` has that query and a script that counts each `find` against a XenForo release zip
+before it is installed; there is no PHPUnit suite, by decision.
 
 **Prefer editing a modification in the admin control panel and exporting** over hand-editing its
 JSON: the `find` and `replace` values carry escaped tabs and newlines, and the hashes in
