@@ -58,6 +58,13 @@ stale. It is not a dependency: on a forum where nothing defines the event the li
 and nothing goes in `addon.json`'s `require`. The method takes `array &$declarations` and declares
 no return type, because `void` needs PHP 7.1 and XenForo 2.2 still allows 7.0.
 
+## No `config` or `validate` commands, deliberately
+
+**The add-on has nothing to report that the forum does not already show.** Its one setting is
+display text, which is its own evidence; nothing runs unattended; and a template modification that
+stops matching is already counted as not found in XenForo's own modification log summary. Add the
+commands if it ever gains a credential, a scheduled task or state outside the options page.
+
 ## Commands
 
 XF commands run through `cmd.php` at the root of the XenForo install, four levels up from this
