@@ -12,8 +12,9 @@ the one way it breaks.
 | modification `hampelLocationExplainRegisterMacros` | appends `explain=` to the location row in `register_macros` |
 | modification `hampelLocationExplainAccountDetails` | appends `explain=` to the location row in `account_details` |
 | `Setup.php` | queues XF 2.3's post-upgrade file clean-up; nothing else |
+| listener on `hampel_admin_api_redaction` | declares that the add-on has no secret settings; never fires unless another add-on defines that event |
 
-No class extensions, code event listeners, templates or phrases outside the option's own.
+No class extensions, templates or phrases outside the option's own.
 
 ## Fragile points
 

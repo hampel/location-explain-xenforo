@@ -5,9 +5,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Location Explain is a XenForo add-on (`Hampel/LocationExplain`, requires XF 2.2.8+) that adds
 admin-configured explanatory text beneath the Location field on the registration form and the
 account details page. The repository root is the add-on directory,
-`src/addons/Hampel/LocationExplain/` inside a XenForo install. There are no Composer dependencies,
-no tests, and no PHP beyond `Setup.php`: **the add-on is one option and two template
-modifications in `_output/`.**
+`src/addons/Hampel/LocationExplain/` inside a XenForo install. There are no Composer dependencies
+and no tests, and the only PHP is `Setup.php` and a `Listener.php` that declares it has no secrets:
+**the add-on is one option and two template modifications in `_output/`.**
 
 ## The explanation is an `explain` attribute added to core's own textbox
 
@@ -45,6 +45,18 @@ JSON: the `find` and `replace` values carry escaped tabs and newlines, and the h
 `_output/`. `postUpgrade()` calls `enqueuePostUpgradeCleanUp()` only when
 `\XF::$versionId >= 2030000`, because that method does not exist on XF 2.2 and the add-on still
 installs there.
+
+## `Listener.php` declares that the option is not a secret
+
+**It answers the `hampel_admin_api_redaction` code event with an empty entry for this add-on's id.**
+An add-on that reports a forum's configuration with the secrets removed fires that event, and shows
+an add-on's text settings only once the add-on has said which of them are secrets. The option here
+is not one — its text is printed on public pages — and the add-on reads no `config.php` keys.
+
+**Revisit the declaration when an option is added or renamed.** There is no suite to catch it going
+stale. It is not a dependency: on a forum where nothing defines the event the listener never fires,
+and nothing goes in `addon.json`'s `require`. The method takes `array &$declarations` and declares
+no return type, because `void` needs PHP 7.1 and XenForo 2.2 still allows 7.0.
 
 ## Commands
 
