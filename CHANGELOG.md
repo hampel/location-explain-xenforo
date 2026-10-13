@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.5 (2026-10-13)
+
+- answer the `hampel_admin_api_redaction` code event to declare that the option is not a secret, so an add-on that reports a forum's configuration with secrets removed can show the explanation text — this adds no dependency, and does nothing on a forum where no add-on defines that event
+
 ## 1.0.4 (2026-09-30)
 
 - the option's explanation now says the registration form shows the text only when "Require location" is enabled, and that it is plain text
